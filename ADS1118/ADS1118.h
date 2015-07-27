@@ -38,7 +38,6 @@ class ADS1118
 		int32_t readFahrenheit();
 		
 	private:
-		int32_t getRawTemp();
 		int32_t getTempFromCode(int32_t);
 		int32_t getLocalCompensation(int32_t);
 		
