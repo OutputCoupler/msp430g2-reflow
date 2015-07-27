@@ -9,3 +9,5 @@ The solder profile is currently set for leaded solder, but can be
 adjusted via a series of #defines that set the desired temperatures,
 rate of rise and PID controller parameters.
 
+Requires the Arduino PID and QueueList lirbaries.
+
