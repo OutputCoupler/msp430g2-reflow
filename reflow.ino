@@ -120,8 +120,6 @@ uint32_t oldestReadingAt = 0;
 int32_t lastReading = 0;
 int32_t oldestReading = 0;
 
-uint32_t displayUpdatedAt = 0;
-
 void setup() {
 	pinMode(RELAY_PIN, OUTPUT);
 	pinMode(BUTTON_PIN, INPUT_PULLUP);
@@ -332,7 +330,7 @@ void recordTemp() {
 // Returns hundredths of a degree per second
 int32_t getRateOfRise() {
 	if (readings.count() <= 1) {
-		return 0.0;
+		return 0;
 	}
 
 	int32_t tempDiff = (lastReading - oldestReading) * 10 * 1000;
