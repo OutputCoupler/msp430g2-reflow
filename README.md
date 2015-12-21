@@ -1,5 +1,6 @@
 # msp430g2-reflow
-Reflow oven controller for the MSP430G2553 and ADS1118 BoosterPack
+Reflow oven controller for the MSP430G2553 and ADS1118 BoosterPack.
+Will not work on other MSP430G2xxx devices (not enough memory).
 
 The relay is connected to pin 18 (XOUT). Start the oven by pressing
 the bottom button on the BoosterPack. The top button does nothing, 
